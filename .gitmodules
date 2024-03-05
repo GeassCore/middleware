@@ -1,0 +1,3 @@
+[submodule "v2/component/isp"]
+	path = v2/component/isp
+	url = https://github.com/sophgo/SensorSupportList.git
