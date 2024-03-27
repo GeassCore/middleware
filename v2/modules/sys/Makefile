@@ -36,6 +36,7 @@ EXTRA_CFLAGS += -D_FILE_OFFSET_BITS=64
 endif
 
 LDFLAGS  = -shared -fPIC -Wl,--gc-sections -export-dynamic -L$(MW_LIB) -L$(MW_3RD_LIB) --sysroot $(SYSROOT) $(CVI_TARGET_PACKAGES_LIBDIR)
+EXTRA_LDFLAGS = -latomic
 
 .PHONY : clean all
 all : $(TARGET_A) $(TARGET_SO)
